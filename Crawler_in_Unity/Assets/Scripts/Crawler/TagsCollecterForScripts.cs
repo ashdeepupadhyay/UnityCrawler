@@ -32,7 +32,6 @@ public class TagsCollecterForScripts
     public void UpdateLocTags()
     {
         List<string> csFileDirectories = new List<string>(GetFilesRecursively(Application.dataPath, ".cs"));
-        List<string> unsavedFileDirectories = new List<string>();
         List<string> existingIDs = new List<string>();
 
         foreach (string fileDirectory in csFileDirectories)
